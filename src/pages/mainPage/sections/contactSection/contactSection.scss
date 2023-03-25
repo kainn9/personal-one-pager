@@ -1,0 +1,37 @@
+@import "@styles/variables.module.scss";
+
+.contact-section {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 600px;
+  min-height: 600px;
+  max-width: 1900px;
+}
+
+#contact-section__reach-out-btn {
+  margin-top: 15px;
+  height: 50px;
+  width: 120px;
+  background-color: $purple-darker;
+  color:  $purple-lightest;
+  border: 2px solid $purple-lightest;
+  border-radius: 2px;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid $retro-teal;
+    color:  $retro-teal;
+  }
+}

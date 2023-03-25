@@ -1,0 +1,97 @@
+@import "@styles/variables.module.scss";
+@import "@styles/anims.scss";
+@import "@kainn9/kain_ui_lib/dist/ui_styles";
+
+body {
+  margin: auto;
+  max-width: 100%;
+
+  background-color: $purple-darker;
+  
+  animation-name: change-background;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+body > #root > div {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+
+section {
+  padding-left: $page-indent-px;
+  padding-right: $page-indent-px;
+  padding-top: 10vh;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+
+.loader-section {
+  padding: 0px;
+}
+
+.logo-fitted {
+  position: fixed;
+  z-index: 4;
+  left: 20px;
+  top: 25px;
+  background-color: $purple-darker;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-bg-buffer {
+  z-index: 2;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  background-color: $purple-darker;
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  section{
+    padding-left: $page-indent-px-tablet;
+    padding-right: $page-indent-px-tablet;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  section {
+    padding-left: $page-indent-px-desktop;
+    padding-right: $page-indent-px-desktop;
+  }
+}
+
+
+
+
+/* custom scrollbar */
+// ::-webkit-scrollbar {
+//   width: 0px;
+//   background-color: transparent;
+// }
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: $retro-teal;
+outline: 1px solid $retro-teal;
+}

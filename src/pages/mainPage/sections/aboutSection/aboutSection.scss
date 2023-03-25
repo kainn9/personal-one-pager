@@ -1,0 +1,25 @@
+@import "@styles/variables.module.scss";
+
+.about-section {
+  padding-top: 0px;
+
+  animation-name: expand-header;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.about-section__section-header {
+  @include section-header;
+}
+
+.about-section__section-content {
+  letter-spacing: $general-content-letter-spacing;
+}
+
+.about-section__img-link.image-link-container {
+  @include border-teal
+}
+
+.about-section__card.simple-card {
+  @include border-teal
+}

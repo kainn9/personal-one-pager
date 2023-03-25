@@ -1,0 +1,80 @@
+@import "@styles/variables.module.scss";
+
+.s-nav {
+  right: -$page-indent-px;
+
+  animation-name: expand-100;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 3 !important;
+}
+
+.s-nav__inner {
+  background-color: $purple-darker;
+
+  animation-name: expand-100;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding-right: 15px;
+  border-bottom: $retro-teal 1px solid;
+
+  .link .kul {
+    text-align: center;
+  }
+}
+
+
+.s-nav-mobile {
+  border-left: $retro-teal 1px solid;
+  border-bottom: $retro-teal 1px solid;
+}
+
+@keyframes expand-100 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: calc(100% - ($page-indent-px));
+  }
+}
+
+
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  .s-nav__inner {
+    margin-left: calc($page-indent-px-tablet);
+  }
+
+  .s-nav__linkedin-nav-icon-container {
+    margin-left: 30px;
+  }
+
+  @keyframes expand-100 {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: calc(100% - $page-indent-px-tablet);
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+
+  .s-nav__inner {
+    margin-left: calc($page-indent-px-desktop);
+  }
+
+
+  @keyframes expand-100 {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: calc(100% - $page-indent-px-desktop);
+    }
+  }
+}

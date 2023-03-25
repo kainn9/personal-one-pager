@@ -1,0 +1,62 @@
+@import "@styles/variables.module.scss";
+
+.intro-section {
+  justify-content: center;
+  padding-top: 100px;
+
+  .intro__name-prefix-sub {
+    margin-bottom: 10px;
+    margin-top: 25px;
+    letter-spacing: 0.1em;
+    transform: translate(10px);
+  }
+
+  .intro__name-sub-header {
+    margin-bottom: 20px;
+  }
+
+  .intro__section-sub-text p {
+    margin-bottom: 10px;
+    letter-spacing: $general-content-letter-spacing;
+    width: 80%;
+  }
+
+  #intro__section-ftf-link {
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  .intro-section {
+    .intro__name-prefix-sub {
+      margin-bottom: 25px;
+      margin-top: 0px;
+    }
+
+    .intro__section-sub-text p {
+      margin-bottom: 10px;
+      letter-spacing: $general-content-letter-spacing;
+      width: 55%;
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .intro-section {
+
+    .intro__name-prefix-sub {
+      margin-bottom: 25px;
+      margin-top: 0px;
+    }
+
+    .intro__section-sub-text p {
+      margin-bottom: 10px;
+      letter-spacing: $general-content-letter-spacing;
+      width: 710px;
+    }
+  }
+}

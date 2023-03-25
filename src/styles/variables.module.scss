@@ -1,0 +1,34 @@
+@import '~@kainn9/kain_ui_lib/dist/scssVars/colors/colors.module.scss';
+@import "./mixins.scss";
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;
+
+$nav-extra-padding: 100px;
+
+$page-indent-px-desktop: 300px;
+$page-indent-px-tablet: 70px;
+$page-indent-px: 30px;
+
+
+
+$general-content-letter-spacing: 1px;
+
+
+:export {
+  purple-light: $purple-light;
+  purple-dark: $purple-dark;
+  purple-darker: $purple-darker;
+  purple-darkest: $purple-darkest;
+  pink: $pink;
+  magenta: $magenta;
+  black: $black;
+  retro-teal: $retro-teal;
+  white-pink: $white-pink;
+  purple-lightest: $purple-lightest;
+  page-indent-px-desktop: $page-indent-px-desktop;
+  page-indent-px-tablet: $page-indent-px-tablet;
+  page-indent-px: $page-indent-px;
+  breakpoint-tablet: $breakpoint-tablet;
+  breakpoint-desktop: $breakpoint-desktop;
+}

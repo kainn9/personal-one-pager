@@ -1,0 +1,49 @@
+@import "@styles/variables.module.scss";
+
+.project-tab-content-helper__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.project-tab-content-helper__tech-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.project-tab-content-helper__tech-section-left {
+  width: 70%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-tab-content-helper__tech-section-left__tech-stack-area {
+  word-spacing: 10px;
+  line-height: 22px;
+}
+
+.project-tab-content-helper__tech-section-left__github-area {
+  width: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: $white-pink;
+
+  &:hover {
+    color:  $retro-teal;
+    cursor: pointer;
+    transition: 0.6s;
+    transform: translate(0px, -3px);
+  }
+}
+
+.project-tab-content-helper__tech-section-left__github-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
