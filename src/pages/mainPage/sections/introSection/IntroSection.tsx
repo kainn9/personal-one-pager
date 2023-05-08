@@ -98,8 +98,7 @@ const Subtext: FC = () => {
         </Text>
 
         <Text font={"sans"} size="md" color={colors["purple-lightest"]}>
-          On the side, I enjoy exploring different technologies, building, breaking,
-          and learning to have fun and better myself in the process.
+          On the side, I enjoy exploring different technologies, building, breaking, and learning while having fun to better myself in the process.
         </Text>
       </div>
     </AnimContainer>
