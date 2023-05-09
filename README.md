@@ -10,3 +10,6 @@ I must admit, this static site/one-pager built with React CRA is a bit messy and
 # built in eslint
 DISABLE_ESLINT_PLUGIN=true
 ```
+
+### Loader Asset Credits:
+- https://sagak-art-pururu.itch.io/pigs-skillfx
