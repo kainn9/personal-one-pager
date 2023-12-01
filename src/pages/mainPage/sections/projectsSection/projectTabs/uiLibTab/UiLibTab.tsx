@@ -4,7 +4,9 @@ import { socialUrls } from "@util/globals"
 import "./uiLibTab.scss"
 
 const UiLibTab: FC = () => {
-  const UILibUrl = "https://d2qhtb7c0usx4g.cloudfront.net/?path=/story/baseloader--water-dragon"
+  const UILibUrlPreview = "https://d2qhtb7c0usx4g.cloudfront.net/?path=/story/baseloader--water-dragon"
+  const UILibUrl = "https://d2qhtb7c0usx4g.cloudfront.net/?path=/story/baseloader--flame-sword"
+
   const description = `
     A React UI library comprised of reusable components written in TypeScript. 
     The preview build was bundled and presented using Webpack and Storybook, while 
@@ -21,7 +23,7 @@ const UiLibTab: FC = () => {
         <h3 className="projects-section__extra-header"><a href={UILibUrl}>{"(recommended for mobile/tablet)"}</a></h3>
       </div>
 
-      <iframe src={UILibUrl}></iframe>
+      <iframe src={UILibUrlPreview}></iframe>
       <ProjectTabContentHelper
         title = "React Storybook Ui Library"
         description={description}
