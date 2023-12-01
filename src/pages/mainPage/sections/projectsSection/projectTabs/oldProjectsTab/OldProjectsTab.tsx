@@ -35,7 +35,7 @@ const SectionTabs: FC = () => {
   return (
     <div className="projects-section__old-projects-tab">
 
-      <h3 className="projects-section__extra-header">Please be aware that these older bootcamp projects were done in a week or less by with very minimal coding experience.</h3>
+      <h3 className="projects-section__extra-header">Please be aware that these older bootcamp projects were done in a week or less with very minimal coding experience.</h3>
 
       <TabContainer
         className="projects-section____tab-container-component"
