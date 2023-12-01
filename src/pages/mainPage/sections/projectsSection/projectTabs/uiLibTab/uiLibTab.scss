@@ -1,5 +1,14 @@
 @import "@styles/variables.module.scss";
 
 .projects-section__ui-lib-tab {
-  @include projectTab
+  @include projectTab;
+
+  a {
+    text-decoration: none;
+  }
+  
+  a:visited { text-decoration: none; color: $retro-teal; }
+  a:hover { text-decoration: none; color:$retro-teal; }
+  a:focus { text-decoration: none; color:$retro-teal; }
+  a:hover, a:active { text-decoration: none; color:$retro-teal }
 }

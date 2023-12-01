@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<script src="tteokbokki.js"></script>
+<script>
+// Polyfill
+if (!WebAssembly.instantiateStreaming) {
+    WebAssembly.instantiateStreaming = async (resp, importObject) => {
+        const source = await (await resp).arrayBuffer();
+        return await WebAssembly.instantiate(source, importObject);
+    };
+}
+
+const go = new Go();
+WebAssembly.instantiateStreaming(fetch("tteokbokki.wasm"), go.importObject).then(result => {
+    go.run(result.instance);
+
+    const canvas = document.querySelector('canvas');
+
+    let scrollTimer;
+
+    canvas.addEventListener('wheel', function (event) {
+        // Disable pointer events and hide overflow during scrolling
+        canvas.style.pointerEvents = 'none';
+        canvas.style.overflow = 'hidden';
+
+        // Clear the previous timeout
+        clearTimeout(scrollTimer);
+
+        // Set a timeout to re-enable pointer events after a certain period of inactivity (e.g., 500 milliseconds)
+        scrollTimer = setTimeout(() => {
+            // Re-enable pointer events and reset overflow after the timeout
+            canvas.style.pointerEvents = 'auto';
+            canvas.style.overflow = 'auto';
+        }, 500);
+    });
+    
+});
+
+
+
+</script>
+
+<style>
+    canvas {
+        overflow: hidden;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+</style>

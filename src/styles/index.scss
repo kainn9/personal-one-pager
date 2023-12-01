@@ -32,7 +32,7 @@ section {
 
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
 
 }
 
@@ -65,6 +65,13 @@ section {
     padding-left: $page-indent-px-tablet;
     padding-right: $page-indent-px-tablet;
   }
+
+  .nav-bg-buffer {
+    position: sticky;
+    top: 0px;
+  }
+
+  
 }
 
 @media only screen and (min-width: $breakpoint-desktop) {

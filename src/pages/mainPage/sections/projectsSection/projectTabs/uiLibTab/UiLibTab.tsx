@@ -1,14 +1,10 @@
 import { type FC } from "react"
 import { ProjectTabContentHelper } from "@components/projectTabContentHelper/ProjectTabContentHelper"
-import { ImageLink, Text } from "@kainn9/kain_ui_lib"
 import { socialUrls } from "@util/globals"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBookOpen } from "@fortawesome/free-solid-svg-icons"
-import scssVars from "@styles/variables.module.scss"
-import storybookPreviewImage from "@localAssets/photos/storybookPreviewImage.png"
 import "./uiLibTab.scss"
 
 const UiLibTab: FC = () => {
+  const UILibUrl = "https://d2qhtb7c0usx4g.cloudfront.net/?path=/story/baseloader--water-dragon"
   const description = `
     A React UI library comprised of reusable components written in TypeScript. 
     The preview build was bundled and presented using Webpack and Storybook, while 
@@ -19,11 +15,13 @@ const UiLibTab: FC = () => {
   `
   return (
     <div className="projects-section__ui-lib-tab">
-      <ImageLink
-        src={storybookPreviewImage}
-        href={socialUrls.storyBookWaterDragonLoader}
-        icon={<IconForImageLink />}
-      />
+
+      <div className="projects-section__extra-header-container">
+        <h2 className="projects-section__extra-header"><a href={UILibUrl}>{"Click to view on CloudFront"}</a></h2>
+        <h3 className="projects-section__extra-header"><a href={UILibUrl}>{"(recommended for mobile/tablet)"}</a></h3>
+      </div>
+
+      <iframe src={UILibUrl}></iframe>
       <ProjectTabContentHelper
         title = "React Storybook Ui Library"
         description={description}
@@ -31,25 +29,6 @@ const UiLibTab: FC = () => {
         githubUrl={socialUrls.githubUiLibRepoURL}
       />
     </div>
-  )
-}
-
-const IconForImageLink: FC = () => {
-  return (
-  <>
-    <FontAwesomeIcon icon={faBookOpen} size="2xl" color={scssVars["retro-teal"]} />
-      <Text
-        font={"sans"}
-        color="white"
-        size="sm"
-        customStyles={{
-          fontSize: "7px",
-          color: scssVars["retro-teal"]
-        }}
-      >
-        View Preview
-      </Text>
-  </>
   )
 }
 

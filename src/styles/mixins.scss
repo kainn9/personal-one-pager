@@ -26,4 +26,46 @@
   gap: 20px;
   padding: 20px;
   width: 100%;
+
+    
+  iframe {
+    border: none;
+    overflow: hidden;
+    height: 180px;
+  }
+
+  .projects-section__extra-header-container {
+    font-size: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .projects-section__extra-header{
+    color: $retro-teal;
+    margin: 0px;
+    align-self: center;
+    font-family: monospace;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    iframe {
+      height: 60vh;
+    }
+
+    .projects-section__extra-header-container {
+      font-size: 1rem;
+    }
+  }
+
+
+}
+
+@mixin projectSubTab {
+  padding: 0px;
 }

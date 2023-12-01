@@ -165,7 +165,7 @@ const Nav: FC = () => {
       alignment={"center"}
       justify={"right"}
       reverse
-      offsetRight={width < parseInt(scssVars["breakpoint-tablet"]) ? gap : 80}
+      offsetRight={width < parseInt(scssVars["breakpoint-tablet"]) ? gap : 0}
       mobileSettings={{
         iconLink: <IconLink faIcon={faHamburger} color={scssVars["purple-lightest"]} size={"sm"} hoverColor={scssVars["retro-teal"]} onClick={() => {}} />,
         justify: "right",

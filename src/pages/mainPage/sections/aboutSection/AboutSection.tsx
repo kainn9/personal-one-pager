@@ -56,7 +56,7 @@ const SectionCardOne: FC<{ height: number }> = ({ height }) => {
 const AboutText: FC = () => {
   return (
     <>
-      <PurpleLightSansMd>{"My name is Kainan Doneson, and I credit my passion for programming to two childhood interests: Lego Bionicles and World of Warcraft. Bionicles ignited my interest in building, while WoW showed me the boundless potential of software design. Although I didn't pursue game development, my early forays likely laid the foundation for my career in web development."}</PurpleLightSansMd>
+      <PurpleLightSansMd>{"I credit my passion for programming to two childhood interests: Lego Bionicles and World of Warcraft. Bionicles ignited my interest in building, while WoW showed me the boundless potential of software design. Although I didn't pursue game development, my early forays likely laid the foundation for my career in web development."}</PurpleLightSansMd>
       <br /> <br />
       <PurpleLightSansMd>{"For work, I use "}</PurpleLightSansMd>
       <TealSansMd>{"TypeScript "}</TealSansMd>
@@ -68,7 +68,7 @@ const AboutText: FC = () => {
       <TealSansMd>{"React, NextJS, Stimulus, AWS, Heroku, Terraform, CI/CD workflows via GitHub Actions, etc. "}</TealSansMd>
       <br /><br />
       <PurpleLightSansMd>{"As a hobbyist, I've been experimenting with "}</PurpleLightSansMd>
-      <TealSansMd>{"Golang, GRPC, " }</TealSansMd>
+      <TealSansMd>{"2D-Physics, Golang, GRPC " }</TealSansMd>
       <PurpleLightSansMd>{"and "}</PurpleLightSansMd>
       <TealSansMd>{"Protobuf "}</TealSansMd>
       <PurpleLightSansMd>{"to expand my skills. It is fulfilling to experiment with technologies beyond what I use in my professional work, as it helps me broaden my knowledge and skills."}</PurpleLightSansMd>

@@ -2,14 +2,18 @@
 import { type FC } from "react"
 import GoGameTab from "./projectTabs/goGameTab/GoGameTab"
 import { GlowText, SectionWithScrollEffect, TabContainer } from "@kainn9/kain_ui_lib"
-import colors from "@styles/variables.module.scss"
 
-import "./projectsSection.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 import { sectionThreshHold, sectionAnchors } from "@util/globals"
+
 import UiLibTab from "./projectTabs/uiLibTab/UiLibTab"
-import OnePagerTab from "./projectTabs/onePagerTab/OnePagerTab"
+import TteokbokkiTab from "./projectTabs/tteokbokkiTab/TteokbokkiTab"
+import MLiteTab from "./projectTabs/mLiteTab/MLiteTab"
+import OldProjectsTab from "./projectTabs/oldProjectsTab/OldProjectsTab"
+
+import colors from "@styles/variables.module.scss"
+import "./projectsSection.scss"
 
 const tabClickCb = (): void => {
   const url = new URL(window.location.href)
@@ -38,15 +42,20 @@ const SectionHeader: FC = () => {
 
 const SectionTabs: FC = () => {
   const tabHeaders = [
-    "Multiplayer Game",
+    "Physics Library",
     "UI Library",
-    "This One Pager"
+    "Metroidvania Game",
+    "Multiplayer Game",
+    "Old Projects"
+
   ]
 
   const tabContent = [
-    <GoGameTab key={0} />,
+    <TteokbokkiTab key={0} />,
     <UiLibTab key={1} />,
-    <OnePagerTab key={2} />
+    <MLiteTab key={2} />,
+    <GoGameTab key={3} />,
+    <OldProjectsTab key={4} />
   ]
 
   return (

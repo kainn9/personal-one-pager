@@ -1,0 +1,7 @@
+@import "@styles/variables.module.scss";
+
+.projects-section__mLite-tab {
+  @include projectTab;
+}
+
+

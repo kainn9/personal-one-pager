@@ -5,12 +5,12 @@ import "./goGameTab.scss"
 import { socialUrls } from "@util/globals"
 const GoGameTab: FC = () => {
   const description = `
-   Immerse yourself in a shared world built entirely in Golang, where you can 
-   embody various characters, explore zones, and engage in battles until your last 
-   breath (after which you respawn). This game features classic platformer mechanics 
-   alongside a hitbox fighter-style combat system. As an ongoing proof-of-concept project, 
-   it enables me to experiment with unique technologies and tackle complex problem-solving 
-   challenges.
+  Embark on an immersive journey within a shared world, where you assume the roles of 
+  diverse characters, explore captivating zones, and partake in battles until your 
+  last breath, only to respawn and resume the adventure. This game seamlessly 
+  integrates classic platformer mechanics with a hitbox fighter-style combat system. 
+  As a retired proof-of-concept project, it served as a canvas for experimenting with 
+  unique technologies and addressing intricate problem-solving challenges.
   `
   return (
     <div className="projects-section__go-game-tab">

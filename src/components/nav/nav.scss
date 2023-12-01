@@ -2,7 +2,7 @@
 
 .s-nav {
   right: -$page-indent-px;
-
+  position: fixed !important;
   animation-name: expand-100;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -25,8 +25,7 @@
 
 
 .s-nav-mobile {
-  border-left: $retro-teal 1px solid;
-  border-bottom: $retro-teal 1px solid;
+  margin-right: 20px;
 }
 
 @keyframes expand-100 {
@@ -42,6 +41,10 @@
 
 
 @media only screen and (min-width: $breakpoint-tablet) {
+  .s-nav {
+    position: sticky !important;
+    left: 40px;
+  }
   .s-nav__inner {
     margin-left: calc($page-indent-px-tablet);
   }

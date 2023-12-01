@@ -22,7 +22,7 @@ const socialUrls = {
   linkedInUrl: "https://www.linkedin.com/in/kainan-doneson-43749b1b4",
   storybook: "https://d2qhtb7c0usx4g.cloudfront.net",
   storyBookWaterDragonLoader: "https://d2qhtb7c0usx4g.cloudfront.net/?path=/story/baseloader--water-dragon",
-  ftfLink: "https://www.fundthatflip.com/"
+  ftfLink: "https://www.upright.us/"
 }
 const email = "kaindoneson@gmail.com"
 
